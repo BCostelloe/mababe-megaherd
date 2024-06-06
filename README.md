@@ -1,7 +1,7 @@
 # Counting the Mababe Mega-Herd
 
 <p align="center">
-<img src="images/cover_image.png" height="600px">
+<img src="images/cover_image.png" height="500px">
 </p>
 
 
