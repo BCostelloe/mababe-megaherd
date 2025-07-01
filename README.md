@@ -57,11 +57,11 @@ We set min_length_threshold to 10, to remove any trajectories shorter than 10 fr
 
 **7. Generate video clips for manual review.** We use [Notebook 3](3_make_tracked_videos.ipynb) to create a "review video" (figure_videos/review_video.mp4 in the dataset) showing the retained tracks, which flash as they go over the countline, as well as vertical red lines dividing the video into horizontal sections. We then use [Notebook 5](5_make_validation_videos.ipynb) to split this video into 5 horizontal sections, each of which is then split into 20-second segments. The generated video clips are provided in the dataset (figures_videos/manual_review_clips).
 
-**8. Manual review of tracking output.** Each of the video clips generated in Step 7 was manually reviewed by three reviewers who counted the number of animals missed or double-counted by the tracking procedure, as well as animals counted that were not buffalo (there was 1 zebra). Any clips for which all three reviewers did not agree then underwent a second round of review by a single reviewer. The accuracy of this second round was assessed using a double-observer procedure [see Notebook 6](6_double_observer.ipynb). The full results of the manual counting procedure are reported in the Supplement and main text.
+**8. Manual review of tracking output.** Each of the video clips generated in Step 7 was manually reviewed by three reviewers who counted the number of animals missed or double-counted by the tracking procedure, as well as animals counted that were not buffalo (there was 1 zebra). Any clips for which all three reviewers did not agree then underwent a second round of review by a single reviewer. The accuracy of this second round was assessed using a double-observer procedure. See [Notebook 6](6_double_observer.ipynb)). The full results of the manual counting procedure are reported in the supplemental and main text.
 
 **9. Forecasting of missed buffalo.** The drone video ended while buffalo were still entering the video frame. We thus fit a regression model to the count data and used this model to predict how many buffalo we may have missed due to the video ending early. This analysis is performed in [Notebook 7](7_decline_curve_analysis.ipynb).
 
-Please see the manuscript and supplement for further details of this study.
+Please see the paper and supplement for further details of this study.
 
 **References**
 1. Koger, B., Deshpande, A., Kerby, J.T., Graving, J.M., Costelloe, B.R., Couzin, I.D. (2023) Quantifying the movement, behavior and environmental context of group-living animals using drones and computer vision. *Journal of Animal Ecology* 92: 1351-1371.
